@@ -5,13 +5,41 @@
     android:layout_height="match_parent"
     tools:context="com.geoinformation.locationinandroidstudio.StreetView">
 
-    <fragment
-        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
-        android:id="@+id/street_view_panorama"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btn_StreetView_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ButtonClicked"
+            android:text="@string/btn_search_streetView" />
+
+        <EditText
+            android:id="@+id/StreetViewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/search_StreetView"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
 
 
+    <fragment
+        android:id="@+id/street_view_panorama"
+        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout" />
 
 
 </RelativeLayout>
