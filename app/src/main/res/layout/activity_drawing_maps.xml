@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/AddCircleBtn"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/Add_Circle_text_btn"
+                android:onClick="Add_Circle_clicked"/>
+
+            <Button
+                android:id="@+id/Add_Polyline_btn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Add_Polyline_Clicked"
+                android:text="@string/Add_Polyline_btnTxt" />
+
+            <Button
+                android:id="@+id/Add_Polygon_btn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="draw_Polygon_Clicked"
+                android:text="@string/add_polygon_text_btn" />
+
+
+            <Button
+                android:id="@+id/Remove_Polyline_btn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/remove_All_button"
+                android:onClick="Remove_clicked"/>
+
+
+        </LinearLayout>
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.geoinformation.locationinandroidstudio.DrawingMapsActivity" />
+    </LinearLayout>
+
+</LinearLayout>

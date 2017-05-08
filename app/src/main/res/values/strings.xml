@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LAS</string>
+    <string name="title_activity_maps">LAS</string>
+    <string name="search_txt">חיפוש</string>
+    <string name="search_btn">חפש</string>
+    <string name="search_location_mode_btn">Search Location Mode</string>
+    <string name="drawing_mode_btn">Drawing Mode</string>
+    <string name="title_activity_drawing_maps">Map</string>
+    <string name="Add_Circle_text_btn">רדיוס</string>
+    <string name="remove_All_button">הסר הכל</string>
+    <string name="Add_Polyline_btnTxt">פוליגון קווי</string>
+    <string name="add_polygon_text_btn">פוליגון</string>
+    <string name="street_view_mode_btn_txt">Street View Mode</string>
+</resources>

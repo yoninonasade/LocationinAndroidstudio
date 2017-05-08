@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/app_logo.png" />
+        <ignore path="src/main/res/drawable/world_background.jpg" />
+    </issue>
+    <issue id="UnusedResources">
+        <ignore path="src/main/res/drawable/app_logo.png" />
+    </issue>
+</lint>

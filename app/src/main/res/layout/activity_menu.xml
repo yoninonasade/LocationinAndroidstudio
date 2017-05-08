@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geoinformation.locationinandroidstudio.Menu"
+    android:background="@drawable/world_background"
+    tools:ignore="Overdraw">
+
+    <Button
+        android:id="@+id/menu_search_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_location_mode_btn"
+        android:onClick="Search_Clicked"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/menu_drawing_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/drawing_mode_btn"
+        android:onClick="Drawing_Clicked"
+        android:layout_below="@+id/menu_search_btn"
+        android:layout_alignStart="@+id/menu_search_btn"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/StreetView_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_drawing_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/street_view_mode_btn_txt"
+        android:onClick="StreetView_Clicked"/>
+</RelativeLayout>
