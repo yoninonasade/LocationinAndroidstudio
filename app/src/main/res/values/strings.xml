@@ -11,6 +11,6 @@
     <string name="Add_Polyline_btnTxt">פוליגון קווי</string>
     <string name="add_polygon_text_btn">פוליגון</string>
     <string name="street_view_mode_btn_txt">Street View Mode</string>
-    <string name="search_StreetView">הזן כתובת</string>
-    <string name="btn_search_streetView">חפש</string>
+    <string name="svm_text">חפש כתובת</string>
+    <string name="svm_button">חפש</string>
 </resources>

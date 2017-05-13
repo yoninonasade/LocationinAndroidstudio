@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class StreetViewMenu extends AppCompatActivity {
 
@@ -17,7 +16,7 @@ public class StreetViewMenu extends AppCompatActivity {
 
     }
 
-    public void Button_clicked(View view){
+    public void Button_clicked(@SuppressWarnings("UnusedParameters") View view){
 
         Intent intent = new Intent (this,StreetView.class);
         EditText svmText =(EditText)findViewById(R.id.SVM_search_txt);

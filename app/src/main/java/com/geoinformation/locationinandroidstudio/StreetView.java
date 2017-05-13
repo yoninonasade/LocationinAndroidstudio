@@ -13,8 +13,6 @@ import java.util.List;
 
 public class StreetView  extends FragmentActivity implements OnStreetViewPanoramaReadyCallback {
 
-    LatLng latLng =null;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,7 +41,7 @@ public class StreetView  extends FragmentActivity implements OnStreetViewPanoram
 
         if (addressList != null) {
             Address address = addressList.get(0);
-            latLng = new LatLng(address.getLatitude(), address.getLongitude());
+            @SuppressWarnings("UnusedAssignment") LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
 
         }
 

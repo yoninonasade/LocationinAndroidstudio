@@ -31,7 +31,6 @@
         android:background="@drawable/buttonshape"/>
 
     <Button
-        android:id="@+id/StreetView_btn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/menu_drawing_btn"

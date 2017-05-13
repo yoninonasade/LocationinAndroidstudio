@@ -9,9 +9,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +28,6 @@
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/button2"
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:onClick="onSearch"
@@ -42,7 +42,6 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             tools:context="com.geoinformation.locationinandroidstudio.MapsActivity" />
     </LinearLayout>
 
