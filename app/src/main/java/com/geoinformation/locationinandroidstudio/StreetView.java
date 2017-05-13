@@ -1,20 +1,19 @@
 package com.geoinformation.locationinandroidstudio;
+import android.location.Address;
+import android.location.Geocoder;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import com.google.android.gms.maps.OnStreetViewPanoramaReadyCallback;
 import com.google.android.gms.maps.StreetViewPanorama;
 import com.google.android.gms.maps.StreetViewPanoramaFragment;
 import com.google.android.gms.maps.model.LatLng;
-
+import java.io.IOException;
+import java.util.List;
 
 
 public class StreetView  extends FragmentActivity implements OnStreetViewPanoramaReadyCallback {
 
-    //EditText street_view_editText = (EditText)findViewById(R.id.StreetViewTextView);
-   // Button street_view_button = (Button)findViewById(R.id.btn_StreetView_search);
+    LatLng latLng =null;
 
 
     @Override
@@ -26,20 +25,37 @@ public class StreetView  extends FragmentActivity implements OnStreetViewPanoram
                         .findFragmentById(R.id.street_view_panorama);
         streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
 
+
+        Bundle bundle = getIntent().getExtras();
+        String tempText = bundle.getString("SearchText");
+
+        List<Address> addressList = null ;
+
+
+
+        Geocoder geocoder = new Geocoder(this);
+
+        try {
+            addressList = geocoder.getFromLocationName(tempText, 1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (addressList != null) {
+            Address address = addressList.get(0);
+            latLng = new LatLng(address.getLatitude(), address.getLongitude());
+
+        }
+
+
+
     }
 
     @Override
     public void onStreetViewPanoramaReady(final StreetViewPanorama streetViewPanorama) {
-        streetViewPanorama.setPosition(new LatLng(31.807785, 34.658785));
-        Button street_view_button = (Button)findViewById(R.id.btn_StreetView_search);
-
-        street_view_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                streetViewPanorama.setPosition(new LatLng(31.796629, 34.633522));
-            }
-        });
 
 
+        streetViewPanorama.setPosition(new LatLng(31.807721, 34.658907));
     }
 
 

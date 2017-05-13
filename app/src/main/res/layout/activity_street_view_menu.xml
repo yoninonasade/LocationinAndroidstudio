@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geoinformation.locationinandroidstudio.StreetViewMenu"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/world_background">
+
+    <EditText
+        android:id="@+id/SVM_search_txt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="חפש כתובת"
+        tools:layout_editor_absoluteY="171dp"
+        tools:layout_editor_absoluteX="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp" />
+
+    <Button
+        android:id="@+id/SVM_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="חפש"
+        android:onClick="Button_clicked"
+        tools:layout_editor_absoluteY="265dp"
+        tools:layout_editor_absoluteX="142dp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/SVM_search_txt"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"/>
+
+</RelativeLayout>

@@ -14,7 +14,9 @@
         android:text="@string/search_location_mode_btn"
         android:onClick="Search_Clicked"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/menu_drawing_btn"
@@ -24,7 +26,9 @@
         android:onClick="Drawing_Clicked"
         android:layout_below="@+id/menu_search_btn"
         android:layout_alignStart="@+id/menu_search_btn"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/StreetView_btn"
@@ -34,5 +38,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:text="@string/street_view_mode_btn_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
         android:onClick="StreetView_Clicked"/>
+
 </RelativeLayout>
+

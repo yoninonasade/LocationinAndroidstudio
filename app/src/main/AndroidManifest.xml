@@ -33,6 +33,7 @@
             android:name=".DrawingMapsActivity"
             android:label="@string/title_activity_drawing_maps" />
         <activity android:name=".StreetView" />
+        <activity android:name=".StreetViewMenu"></activity>
     </application>
 
 </manifest>

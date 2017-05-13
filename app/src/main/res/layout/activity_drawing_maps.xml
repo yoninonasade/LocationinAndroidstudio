@@ -21,7 +21,9 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:text="@string/Add_Circle_text_btn"
-                android:onClick="Add_Circle_clicked"/>
+                android:onClick="Add_Circle_clicked"
+                android:textSize="15sp"
+                android:background="@drawable/buttonshape1"/>
 
             <Button
                 android:id="@+id/Add_Polyline_btn"
@@ -29,7 +31,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="Add_Polyline_Clicked"
-                android:text="@string/Add_Polyline_btnTxt" />
+                android:text="@string/Add_Polyline_btnTxt"
+                android:textSize="15sp"
+                android:background="@drawable/buttonshape1"/>
 
             <Button
                 android:id="@+id/Add_Polygon_btn"
@@ -37,7 +41,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="draw_Polygon_Clicked"
-                android:text="@string/add_polygon_text_btn" />
+                android:text="@string/add_polygon_text_btn"
+                android:textSize="15sp"
+                android:background="@drawable/buttonshape1"/>
 
 
             <Button
@@ -46,7 +52,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/remove_All_button"
-                android:onClick="Remove_clicked"/>
+                android:onClick="Remove_clicked"
+                android:textSize="15sp"
+                android:background="@drawable/buttonshape1"/>
 
 
         </LinearLayout>

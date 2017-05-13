@@ -58,6 +58,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         if(!location.equals(""))
         {
+
             Geocoder geocoder = new Geocoder(this);
             try{
                 addressList = geocoder.getFromLocationName(location,1);

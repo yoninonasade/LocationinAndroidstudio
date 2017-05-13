@@ -25,7 +25,7 @@ public class Menu extends AppCompatActivity {
 
     public void StreetView_Clicked(@SuppressWarnings("UnusedParameters") View view)
     {
-        Intent intent = new Intent(this,StreetView.class);
+        Intent intent = new Intent(this,StreetViewMenu.class);
         startActivity(intent);
     }
 
